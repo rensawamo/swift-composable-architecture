@@ -15,7 +15,7 @@ Store : 実際にアプリの機能を動かす runtime。全てのユーザー�
 
 → riverpod の Provider と同じような役割。
 
-###　 ex1
+### ex1
 
 ```sh
 import ComposableArchitecture
@@ -67,7 +67,8 @@ struct CounterView: View {
 
 store を定義して、state を取得する。
 
-###　　機能内で外部と通信し、外部からのデータを機能にフィードする方法
+
+### 機能内で外部と通信し、外部からのデータを機能にフィードする方法
 
 外部の api との通信を担う場合、 Action に Effect を追加することで、外部のデータを取得し、それを元に state を更新することができる。
 
@@ -81,7 +82,7 @@ store を定義して、state を取得する。
 
 ...
 
-#　ボタンを押した時の関数の種類をActionで定義したので　処理を与える
+# ボタンを押した時の関数の種類をActionで定義したので　処理を与える
  case .decrementButtonTapped:
         state.count -= 1
         state.fact = nil
